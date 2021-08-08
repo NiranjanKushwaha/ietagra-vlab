@@ -1,0 +1,191 @@
+<html>
+
+<head>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Even_odd_styles.css">
+	<title>Even Odd Check</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 header">
+				<div class="col-sm-2">
+					<i class="fa fa-tree" aria-hidden="true" style="color:rgb(12, 12, 12);font-size: 25px;padding-top:15px;"></i>
+				</div>
+				<div class="col-sm-10">
+					<p class="topicName" >Even Odd Number Checking<p>
+				</div>
+			</div>
+		</div>
+		<div class="row main">
+			<div class="col-sm-3 init">
+				<div id="outer">
+					<div id="up">
+						<div id="l">
+							<i class="fa fa-signal" aria-hidden="true"
+								style="color:#2f71b2;font-size:25px;padding-top:10px;padding-left:20px;"></i>
+						</div>
+						<div id="r">
+							<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Initialize</p>
+						</div>
+					</div>
+					<div id="dw" id="inputbox" style="margin-top:45px;
+	margin-bottom:40px;">
+						<br><br><br>
+						<br><br><br>
+						<br>
+						<div id="make_visible" style="display:none;">
+							<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a number</label></br><br>
+							<input class="form-control" type="number" id="getdata"
+								style="margin-left:25px;width:80%;" />
+							<br>
+							<button class="form-control btn btn-primary" id="checkManuallybtn" onclick="EvenOdd()"
+								style="margin-left:25px;width:80%; font-weight:bold;">Check</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 step">
+				<div id="outer">
+					<div id="up">
+						<div id="l">
+							<i class="fa fa-file-text-o" aria-hidden="true"
+								style="color:#2f71b2;font-size:25px;padding-top:10px;padding-left:40px;"></i>
+						</div>
+						<div id="r">
+							<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Step Execution
+							</p>
+						</div>
+					</div>
+					<div id="dw">
+						<section id="step1">
+							#include &lt;stdio.h&gt;
+						</section>
+
+						<section id="step2">
+							int main()
+						</section>
+
+						<section id="step3">
+							{
+						</section>
+
+						<section id="step4">
+							int number;
+						</section>
+
+						<section id="step5">
+							printf("Enter an integer: ");
+						</section>
+
+						<section id="step6">
+							scanf("%d", &number);
+						</section>
+
+						<section id="step7">
+							if(numbre!=0) </section>
+							
+							<section id="step8">
+								{
+						</section>
+
+						<section id="step9">
+							if(number%2 == 0)
+						</section>
+
+						<section id="step10">
+							{
+						</section>
+
+						<section id="step11">
+							printf("%d is even.", number);
+						</section>
+
+						<section id="step12">
+						}
+						</section>
+						
+						<section id= "step13">
+							else
+						</section>
+
+						<section id= "step14">
+						}
+						</section>
+
+						<section id= "step15">
+							printf("%d is odd.", number);
+						</section>
+
+						<section id= "step16">
+						}
+						</section>
+
+						<section id= "step17">
+						}
+						</section>
+
+						<section id= "step18">
+							else
+						</section>
+
+						<section id= "step19">
+							printf("%d is zero.", number);
+						</section>
+
+						<section id= "step20">
+						}
+						</section>
+
+						<section id= "step21">
+							retrun 0;
+						</section>
+
+						<section id= "step22">
+						}
+						</section>
+						<div class="stepbtn">
+							<button type="button" onclick="start()" class="step-buttons" id="startbtn"
+								style="background-color: green;">Start</button>
+							<button type="button" onclick="next()" class="step-buttons btn-success" id="nextbtn"
+								style="background-color: yellow;" disabled=true>Next</button>
+							<button type="button" onclick="clearAll()" class="step-buttons btn-success" id="clearbtn"
+								style="background-color: yellow;" disabled=true>Clear</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5 output">
+				<div id="outer">
+					<div id="up">
+						<div id="l">
+							<i class="fa fa-desktop" aria-hidden="true"
+								style="color:#2f71b2;font-size:25px;padding-top:12px;padding-left:70px;"></i>
+						</div>
+						<div id="r">
+							<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Code Output</p>
+						</div>
+					</div>
+					<div id="dw">
+						<div id="outer1"><br><br>
+							<label for="w" style="color:#2f71b2;padding-left:10px;">Your output:</label><br><br><br>
+
+							<textarea class="form-control" id="output" name="w" rows="4" cols="50"
+								style="margin-left:25px;width:80%;">
+
+		</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script src="js/Even_odd.js"></script>
+
+</html>

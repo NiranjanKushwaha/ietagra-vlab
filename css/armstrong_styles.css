@@ -1,0 +1,323 @@
+* {
+    margin: 0px;
+    padding: 0x;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1 {
+    overflow: hidden;
+    float: left;
+    position: absolute;
+     margin-left: 25px;
+    margin-top: 40px;
+    width: 31.33%;
+    padding: 10px;
+    height: 90vh;
+    background-color: rgb(209, 181, 128);
+    border-style: solid;
+    border-color: red;
+    border-radius: 1rem;
+    column-gap: 40px;
+
+}
+
+.program {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+#p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#p6,
+#p7,
+#p8,
+#p9,
+#p10,
+#p11,
+#p12,
+#p13,
+#p14,
+#p15,
+#p16,
+#p17,
+#p18,
+#p19,
+#p20,
+#p21,
+#p22,
+#p23,
+#p24,#p25 {
+    text-align: left;
+    font-size: 13px;
+    font-weight:900;
+    color: blueviolet;
+    font-family: sans-serif;
+    font-style: oblique;
+    margin-top:-17px;
+    line-height: 1.5;
+
+}
+
+.column2 {
+    overflow: hidden;
+    float: left;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 40px;
+    width: 31.33%;
+    padding: 10px;
+    height: 90vh;
+    background-color: rgb(209, 181, 128);
+    border-style: solid;
+    border-color: red;
+    border-radius: 1rem;
+
+}
+
+.column3 {
+    
+    float: left; 
+    position: absolute;
+    margin-left: 69%;
+    margin-top: 40px;
+    width: 31.33%;
+    padding: 10px; 
+    height: 90vh;
+    background-color: rgb(209, 181, 128);
+    border-style: solid;
+    border-color: red;
+    border-radius: 1rem;
+
+}
+
+.column3 p {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(95, 120, 213);
+    text-align: center;
+    margin-top: 18px;
+}
+
+pre {
+
+    margin-top: 40px;
+    margin-left: -50px;
+    overflow-x: auto;
+    font-size: large;
+}
+
+#put_number {
+    margin-left: 34%;
+    margin-top: 50px;
+    height: 30px;
+    border-width: 3px;
+
+}
+
+#clear {
+    margin: 10px 50px;
+    width: 100px;
+    height: 32px;
+    background-color: rgb(61, 179, 230);
+
+}
+
+#clear:hover {
+    background-color: red;
+
+}
+
+.cleardi {
+    margin: 40px 30%;
+    width: 200px;
+    height: 60px;
+    /* background: chartreuse; */
+
+}
+
+#check {
+    margin: 70px 40%;
+    width: 100px;
+    height: 32px;
+    background-color: rgb(228, 61, 61);
+
+}
+
+#check:hover {
+    background-color: green;
+
+}
+
+#clear #p {
+    font-size: 10px;
+}
+
+.outputarea {
+    margin: 50px 10%;
+    padding-left: 0px;
+    padding-bottom: 5;
+    height: 50px;
+    width: 50%px;
+    background-color: rgb(214, 213, 212);
+}
+
+#demo1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.backpre {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+}   
+
+#start {
+    position: relative;
+    bottom: 0px;
+    left:30%;
+    border-radius: 10px;
+    text-align: center;
+    width:70px;
+    height:35px;
+    background-color: rgb(101, 198, 101);
+    outline: none;
+
+}
+
+#start:hover {
+    background-color: rgb(3, 130, 3);
+
+}
+
+#next {
+    position: relative;
+    right:30%;
+    bottom: 0px;
+    width:70px;
+    height:35px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(101, 198, 101);
+    outline: none;
+}
+
+#next:hover {
+    background-color: rgb(3, 113, 3);
+
+}
+#ph{
+    margin-left: 70px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: blue;
+}
+#pp{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight:bold;
+    font-style: italic;
+    font-variant:normal;
+    font-stretch: semi-condensed;
+    color:black;
+}
+@media (max-width: 768px) {
+   
+    .column2{
+       margin-left: 7rem;
+    }
+    .column3{
+        margin-left: 12.8rem;
+    }
+   
+    #p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#p6,
+#p7,
+#p8,
+#p9,
+#p10,
+#p11,
+#p12,
+#p13,
+#p14,
+#p15,
+#p16,
+#p17,
+#p18,
+#p19,
+#p20,
+#p21,
+#p22,
+#p23,
+#p24,#p25 {
+    font-size: 7px;
+}
+
+ 
+    .outputarea{
+        margin-left: -0.1rem;
+        width: 100%;
+
+    }
+    #put_number{
+        width: 5rem;
+        font-size: 12px;
+        text-align: center;
+        margin-left: -0.5rem;
+    }
+    #check{
+        margin-left: -1rem;
+    }
+    #demo1{
+        font-size: 10px;
+    }
+    .cleardi{
+        margin-left: -1rem;
+    }
+     #clear{
+         width: 4rem;
+         margin-left: 1rem;
+        
+     }
+     .pu{
+         width: auto;
+    
+     }
+     #ph{
+         margin-left: -0.3rem;
+         font-size: 12px;
+        
+         text-align: center;
+     }
+     #pp{
+        font-size: 12px;
+        
+     }
+    
+
+}
+

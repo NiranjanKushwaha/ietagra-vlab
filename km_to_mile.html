@@ -1,0 +1,194 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/KM_to_Mile_styles.css">
+	<link rel="icon" href="img\3ef140cb2dd1975cd81b33ccc79103e6-virtual-reality-icon-by-vexels.png">
+	<title>Prime Check</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 header">
+				
+				<div class="col-sm-10">
+					<p class="topicName text-center">Km to Mile Convertor<p>
+				</div>
+			</div>
+		</div>
+		<div class="row main">
+			<div class="col-sm-3 init">
+				<div id="outer">
+					<div id="up">
+						<div id="l">
+							<i class="fa fa-signal" aria-hidden="true"
+								style="color:#2f71b2;font-size:25px;padding-top:10px;padding-left:20px;"></i>
+						</div>
+						<div id="r">
+							<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Initialize of Input</p>
+						</div>
+					</div>
+					<div id="dw" id="inputbox" style="margin-top:45px;
+	margin-bottom:40px;">
+						<br><br><br>
+						<br><br><br>
+						<br>
+						<div id="make_visible" style="display:none;">
+							<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a
+								distance in KMs </label></br><br>
+							<input class="form-control" type="number" id="getdata"
+								style="margin-left:25px;width:80%;" />
+
+							<br>
+							<button class="form-control btn btn-primary mt-3" id="checkManuallybtn" onclick="Kilo()"
+								style="margin-left:25px;width:80%; font-weight:bold;">Convert</button>
+						</div>
+						<div id="make_visible1" style="display:none;">
+							<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a
+								distance in Miles </label></br><br>
+							<input class="form-control" type="number" id="getdata1"
+								style="margin-left:25px;width:80%;" />
+							
+							<br>
+							<button class="form-control btn btn-primary mt-3" id="checkManuallybtn" onclick="Mile()"
+								style="margin-left:25px;width:80%; font-weight:bold;">Convert</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 step">
+				<div id="outer">
+					<div id="up">
+						<div id="l">
+							<i class="fa fa-file-text-o" aria-hidden="true"
+								style="color:#2f71b2;font-size:25px;padding-top:10px;padding-left:40px;"></i>
+						</div>
+						<div id="r">
+							<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Step of Execution
+							</p>
+						</div>
+					</div>
+					<div id="dw">
+						<section id="step1">
+							#include &lt;stdio.h&gt;
+						</section>
+
+						<section id="step2">
+							int main()
+						</section>
+
+						<section id="step3">
+							{
+						</section>
+
+						<section id="step4">
+							int n;
+						</section>
+						<section id="step5">
+							float t,mil,km;
+						</section>
+						<section id="step6">
+							printf("Enter a Number which case to run:");
+						</section>
+						<section id="step7">
+							scanf("%d", &n);
+						</section>
+						<section id="step8">
+							switch(n){;
+						</section>
+						
+						<section id="step9">
+							case 1:
+						</section>
+						<section id="step10">
+							printf("Enter a distance in km ");
+						</section>
+						<section id="step11">
+							scanf("%f", &t);
+						</section>
+						<section id="step12">
+							mil=t*0.6213;
+						</section>
+						
+						<section id="step13">
+							break;
+						</section>
+						<section id="step14">
+							case 2:
+						</section>
+						<section id="step15">
+							printf("Enter a distance in Miles: ");
+						</section>
+						<section id="step16">
+							scanf("%f", &t);
+						</section>
+						
+						<section id="step17">
+							km=t*1.6093;
+						</section>
+						<section id="step18">
+							break;
+						</section>
+						<section id="step19">
+							}
+						</section>
+						
+						<section id="step20">
+							return 0;
+						</section>
+
+						<section id="step21">
+							}
+						</section>
+
+						</section>
+						<div class="stepbtn">
+							<button type="button" onclick="start()" class="step-buttons" id="startbtn"
+								style="background-color: green;">Start</button>
+							<button type="button" onclick="next()" class="step-buttons btn-success" id="nextbtn"
+								style="background-color: teal;" disabled=true>Next</button>
+							<button type="button" onclick="clearAll()" class="step-buttons btn-success" id="clearbtn"
+								style="background-color: teal;" disabled=true>Clear</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5 output">
+				<div id="outer">
+					<div id="up">
+						<div id="l">
+							<i class="fa fa-desktop" aria-hidden="true"
+								style="color:#2f71b2;font-size:25px;padding-top:12px;padding-left:70px;"></i>
+						</div>
+						<div id="r">
+							<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Code Output</p>
+						</div>
+					</div>
+					<div id="dw">
+						<div id="outer1"><br><br>
+							<label for="w" style="color:#2f71b2;padding-left:10px;">Output show :</label><br><br><br>
+
+							<textarea class="form-control" id="output" name="w" rows="4" cols="50"
+								style="margin-left:25px;width:80%;">
+
+		</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script src="js/KM_to_Mile_script.js"></script>
+
+</html>

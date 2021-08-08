@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+/*     background-image: url(https://www.sahyadri.edu.in/images/news/1562589015796763273_Sahyadri%E2%80%93a-Recognized-Virtual-Lab-Nodal-Centre.jpg); */
+  color:#ffffff;
+    
+   /* border: 1px double darkmagenta;
+    border-radius: 20px;
+    */
+
+    
+}
+.container{
+    flex-direction: row;
+    height: 100vh;
+
+    display: flex;
+    border: 0px solid black;
+}
+#one{
+  
+    flex: 1;
+/*     background-color: hsl(0, 100%, 50%)
+; */
+  
+    opacity: 0.9;
+    border: 0px solid blue ;
+}
+#two{
+
+
+    flex: 2;
+    border: 0px solid blue ;
+    background-color: white;
+    opacity: 0.9;
+}
+#three{
+    flex: 0;
+    border: 0px solid blue ;
+    background-color: green;
+}
+button{
+    align-content: center;
+    margin-top: 70%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    
+    color: crimson;
+}
+#program{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: black;
+    font-family: 'Amaranth', sans-serif;
+
+}
+.love{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 40px;
+    color:white;
+    font-family: 'Amaranth', sans-serif;
+
+}
+

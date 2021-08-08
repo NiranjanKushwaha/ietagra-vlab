@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/speedTime_styles.css">
+		<link rel="icon" href="img\3ef140cb2dd1975cd81b33ccc79103e6-virtual-reality-icon-by-vexels.png">
+		<title>Measurement</title>
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 header">
+					
+					<div class="col-sm-10">
+						<p class="topicName">Speed, Time and Distance measurement<p>
+					</div>
+				</div>
+			</div>
+			<div class="row main">
+				<div class="col-sm-3 init">
+					<div id="outer">
+						<div id="up">
+							<div id="l">
+								<i class="fa fa-signal" aria-hidden="true"
+									style="color:#2f71b2;font-size:25px;padding-top:10px;padding-left:20px;"></i>
+							</div>
+							<div id="r">
+								<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Initialize</p>
+							</div>
+						</div>
+						<div id="dw" id="inputbox" style="margin-top:45px;
+		margin-bottom:40px;">
+							
+							<div id="make_visible1" style="display:none;">
+								<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a
+									Distance in km</label></br><br>
+								<input class="form-control" type="number" id="dis1"
+									style="margin-left:25px;width:80%;" />
+								<br>
+								<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a
+									Time hours</label></br><br>
+								<input class="form-control" type="number" id="tim1"
+									style="margin-left:25px;width:80%;" />
+								<button class="form-control btn btn-primary mt-4" id="checkManuallybtn" onclick="Speed()"
+									style="margin-left:25px;width:80%; font-weight:bold;">Calculate Speed</button>
+							</div>
+							<div id="make_visible2" style="display:none;">
+								<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a
+									Distance in km</label></br><br>
+								<input class="form-control" type="number" id="dis2"
+									style="margin-left:25px;width:80%;" />
+								<br>
+								<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a
+									Speed in km/h</label></br><br>
+								<input class="form-control" type="number" id="spe1"
+									style="margin-left:25px;width:80%;" />
+								<button class="form-control btn btn-primary mt-4" id="checkManuallybtn" onclick="Time()"
+									style="margin-left:25px;width:80%; font-weight:bold;">Calculate Time</button>
+							</div>
+							<div id="make_visible3" style="display:none;">
+								<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a
+									Speed in km/h</label></br><br>
+								<input class="form-control" type="number" id="spe2"
+									style="margin-left:25px;width:80%;" />
+								<br>
+								<label class="text-center" id="lblinput" style="color:#2f71b2;padding-left:28px;">Enter a
+									Time in hours</label></br><br>
+								<input class="form-control" type="number" id="tim2"
+									style="margin-left:25px;width:80%;" />
+								<button class="form-control btn btn-primary mt-4" id="checkManuallybtn" onclick="Distance()"
+									style="margin-left:25px;width:80%; font-weight:bold;">Calculate Distance</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 step">
+					<div id="outer">
+						<div id="up">
+							<div id="l">
+								<i class="fa fa-file-text-o" aria-hidden="true"
+									style="color:#2f71b2;font-size:25px;padding-top:10px;padding-left:40px;"></i>
+							</div>
+							<div id="r">
+								<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Step Execution
+								</p>
+							</div>
+						</div>
+						<div class="text-white">
+							<section id="step1">
+								def measurement(exe1):
+							</section>
+							<section id="step2" class="first-tab">
+								if(exe1 ==1):
+							</section>
+							<section id="step3" class="second-tab">
+								speedfun(distance,time)	
+							</section>						
+							<section id="step4" class="first-tab">
+								if(exe1 ==2):
+							</section>
+							<section id="step5" class="second-tab">
+								timefun(distance,speed)
+							</section>
+							<section id="step6" class="first-tab">
+								if(exe1 ==3):
+							</section>
+							<section id="step7" class="second-tab">
+								distancefun(speed,time)
+							</section>
+	
+							<section id="step8">
+								measurement(exe1)
+							</section>
+	
+							<section id="step9">
+								def speedfun(distance,time):
+							</section>
+							<section id="step10" class="first-tab">
+								speedget=distance/time
+							</section>
+							<section id="step11" class="first-tab">
+								return(speedget)
+							</section>
+							<section id="step12" >
+								def timefun(distance,speed):
+							</section>
+							<section id="step13" class="first-tab">
+								timeget=distance/speed
+							</section>
+							<section id="step14" class="first-tab">
+								return(timeget)
+							</section>
+							<section id="step15">
+								def distancefun(speed,time):
+							</section>
+							<section id="step16" class="first-tab">
+								distanceget=speed*time
+							</section>
+							<section id="step17" class="first-tab">
+								return(distanceget)
+							</section>						
+							</section>
+							<div class="stepbtn ">
+								<button type="button" onclick="start()" class="step-buttons mx-3" id="startbtn"
+									style="background-color: rgb(187, 161, 46);">Start</button>
+								<button type="button" onclick="next()" class="step-buttons btn-success mx-3" id="nextbtn"
+									style="background-color: rgb(32, 186, 233);" disabled=true>Next Line</button>
+								<button type="button" onclick="clearAll()" class="step-buttons btn-success mx-3 " id="clearbtn"
+									style="background-color: rgb(85, 228, 197);" disabled=true>Clear All</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 output">
+					<div id="outer">
+						<div id="up">
+							<div id="l">
+								<i class="fa fa-desktop" aria-hidden="true"
+									style="color:#2f71b2;font-size:25px;padding-top:12px;padding-left:70px;"></i>
+							</div>
+							<div id="r">
+								<p class="text-center" style="color:#2f71b2;font-size:25px;padding-top:7px;">Code Output</p>
+							</div>
+						</div>
+						<div class="bottom-level">
+							<div id="outer1"><br><br>
+								<label for="w" style="color:#1d1b1b;padding-left:10px; font-size: large;">Your output:</label><br>
+	
+								<textarea class="form-control" id="output" name="w" rows="4" cols="50"
+									style="margin-left:25px;margin-right:20px;width:90%;">
+	
+			</textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		<script src="js/speedTime.js"></script>
+	</body>	
+</html>

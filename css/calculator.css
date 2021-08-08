@@ -1,0 +1,141 @@
+#head
+{
+
+	width: 1200px;
+	color: blue;
+	height: 120px;
+
+	background-color:#e0e0eb;  /*#e0eeb0 */
+     margin-left: 50px;
+    /* border: 1px solid; */
+     border-radius: 10px;
+
+
+}
+#IMG	
+{
+    margin-left: 10px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+#h2
+{
+	margin-top: -80px;
+	margin-left: 400px;
+}
+#p
+{
+	margin-left: 450px;
+	margin-top: 20px;
+	color: blue;
+}
+
+#head1
+{
+	width: 1200px;
+	color: #0059b3;
+	text-align: center;
+	background-color:#99ccff;  /* # 85144b*/ 
+     margin-left: 50px;
+     border: 1px solid #99ccff;
+     margin-top: -20px;
+      border-radius: 5px;     
+}
+
+.sim
+{
+	margin-top: 0px;
+	height: 600px;
+    width: 1200px;
+	background-color: ; 
+	/*border: 1px solid ;*/
+	margin-left: 50px;
+}
+#left
+{
+	height: 700px;
+     width: 400px;
+	background-color:#3d8cd4;
+	float: left;
+	margin-top: 0px;
+}
+#middle
+{
+	height: 700px;
+	width: 400px;
+	background-color:#00aaff;
+	float: left;
+	margin-top: 0px;
+	
+}
+#right
+{
+	height: 700px;
+     width: 400px;
+	background-color:#00ace6;   /*#9cc2e2 */
+	float: left;
+	margin-top: 0px;
+	/*margin-left: 50px; */
+ }
+p
+{
+	color: white;
+}
+
+
+@media only screen and (max-width: 500px)
+{
+#head
+{
+	width: 100%;
+	position:relative;
+}
+}
+
+@media only screen and (max-width: 500px)
+{
+	#IMG
+	{
+		width: 100px;
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 500px)
+{
+#h2
+{
+	width: 100%;
+	position: -webkit-sticky;
+	margin-right:100px;
+}
+}
+@media only screen and (max-width: 500px)
+{
+#p
+{
+	width: 100%;
+	position: relative;
+
+}
+
+}
+
+@media only screen and (max-width: 500px)
+{
+	#head1
+	{
+		width: 100px;
+		position: relative;
+
+	}
+}
+@media only screen and (max-width: 500px)
+{
+.sim
+{
+	width: 80px;
+	position:relative;
+}
+}

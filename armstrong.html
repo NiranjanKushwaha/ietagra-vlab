@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong number simulator</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/armstrong_styles.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mt-0">
+        <div class="column1 col-sm-4 p-2">
+            <h2 style="font-size: 15px; overflow: hidden;" class=" mt-0">Armstrong Number Program</h2>
+            <div class="program">
+              
+                <p id="p1" style="margin-top: 0px;"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <p id="p5"></p>
+                <p id="p6"></p>
+                <p id="p7"></p>
+                <p id="p8"></p>
+                <p id="p9"></p>
+                <p id="p10"></p>
+                <p id="p11"></p>
+                <p id="p12"></p>
+                <p id="p13"></p>
+                <p id="p14"></p>
+                <p id="p15"></p>
+                <p id="p16"></p>
+                <p id="p17"></p>
+                <p id="p18"></p>
+                <p id="p19"></p>
+                <p id="p20"></p>
+                <p id="p21"></p>
+                <p id="p22"></p>
+                <p id="p23"></p>
+                <p id="p24"></p>
+                <p id="p25"></p>
+            </div>
+            <div class="backpre" style=" margin-top: -4rem; height: 5rem;">
+                <button id="start" onclick="Mystart()" style=" margin-left: -1.3rem; font-size: 12px; width: 3rem; height: 1.5rem; margin-top:2rem;">Start</button> 
+                <button id="next" onclick="buttonClick()" style="margin-left: 2.9rem; font-size: 12px; width: 3rem; height: 1.5rem; margin-top: 2rem;">Next</button>
+            </div>
+
+        </div>
+
+        <div class="column2 col-sm-4 p-2">
+            <h2 style="font-size: 20px;overflow: hidden;" class="mt-0">Enter any Number</h2>
+            <p>
+                <input id="put_number" type="number" placeholder="Enter number"><br>
+                <button id="check" onclick="Armstrong()">Check</button></br></br>
+            </p>
+
+            <!-- <button onclick="buttonClick()">Click Me</button>
+            <input type="text" id="p2" value="0"></input> -->
+           
+        </div>
+
+        <div class="column3 col-sm-4 p-2">
+
+            <h2 style="font-size: 20px;overflow: hidden;" class="mt-0">Output</h2>
+
+            <diV class="outputarea" style="overflow: hidden;">
+                <p id="demo1" >Output Show Here</p><br>
+            </diV>
+
+            <div class="cleardi">
+                <button id="clear" onclick="Myclear()">Clear</button> 
+            </div>
+
+            <div class="pu">
+                <h1 id="ph">Program Explaination</h1>
+                <p id="pp"></p>
+            </div>
+
+          
+
+        </div>
+    </div>
+    </div>
+    <script src="js/armstrong_script.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>

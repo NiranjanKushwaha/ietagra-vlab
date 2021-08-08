@@ -1,0 +1,122 @@
+.header {
+    height: 60px;
+    background-color: #000000;
+    width: 100%;
+    color: #f50606;
+  }
+  
+  /* .init{
+      float:left; 
+      padding-bottom:10px;
+      margin-bottom:-10px"
+  }
+  
+  .step{
+      float:left; 
+      padding-bottom:10px;
+      margin-bottom:-10px"
+  }
+  */
+
+  body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(5, 0, 92) 0%, rgb(155, 5, 0) 23%, rgb(97, 201, 0) 100%);
+  }
+  .col-sm-3,
+  .col-sm-4 {
+    background: rgba( 0, 0, 0, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.37);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: auto;
+    margin-top: 20px;
+    height: 600px;
+  }
+  
+  .topicName {
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 680px) {
+    .topicName {
+      font-size: 25px;
+    }
+  }
+  
+  #outer {
+    width: 100%;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  #outer2 {
+    min-height: 600px;
+    width: 100%;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 10px;
+  }
+  
+  #up {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgb(68, 68, 68);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  #l {
+    height: 50px;
+    width: 20%;
+    float: left;
+  }
+  
+  #r {
+    height: 50px;
+    width: 80%;
+    float: right;
+  }
+  
+  #dw {
+    color: rgb(173, 173, 173);
+    height: 400px;
+    width: 100%;
+    margin-left: 5%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+  }
+  
+  .stepbtn {
+    margin-top: 20px;
+    padding: auto;
+    margin-left: 25%;
+  }
+  
+  .step-buttons {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .step-buttons:focus{
+    outline: none;
+    border: none;
+  }
+  
+  #outer1 {
+    height: 300px;
+    width: 80%;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 15px 15px 15px 15px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  

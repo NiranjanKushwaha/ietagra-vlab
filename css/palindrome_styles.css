@@ -1,0 +1,263 @@
+.topSection{
+    width:100%;
+    height:50px;
+    background-color: #2c3e50;
+}
+
+.topSection p{
+    color:white;
+    font-size: 1.7rem;
+}
+@media only screen(max-width:680px)
+{
+
+}
+
+.code{
+    color:#00a8ff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-left:10px;
+    font-weight: 600;
+}
+.buttons{
+   width:290px;
+    height:40px;
+    margin:0 auto;
+    margin-top:15px;
+    box-sizing: border-box;
+}
+
+.btn{
+    width:80px;
+    top:0;
+}
+.bottomSection{
+    margin-top:3%;
+}
+/* .columns{
+    height:50px;
+} */
+.left{
+    width:95%;
+    height:100vh;
+    margin:0 auto;
+    border:1px solid red;
+    border-radius:12px;
+    /* box-sizing: content-box; */
+}
+
+.left_heading{
+    width:100%;
+    background-color:#dfe6e9;
+    height:35px;
+    border-radius:12px;
+}
+#Enterbtn{
+    margin-left:25%;
+    /* width:100px; */
+}
+
+#Enterbtn:hover{
+    background-color:#44bd32;
+    width:120px; 
+    border-radius:10px;
+    border:none;
+    font-weight: 500;
+    outline:none;
+}
+#firstNum,#secondNum{
+    margin-left:10%;
+    margin-top:10%;
+    outline:none;
+    border:2px solid #e84393;
+    border-radius:5px;
+    display: block;
+    box-sizing: border-box;
+}
+
+#firstNum:hover{
+    border:2px solid #00b894;
+    width:75%;
+}
+#secondNum:hover{
+    border:2px solid #00b894;
+    width:75%;
+}
+.left-bottom-btn{
+    width:100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0;
+    position: absolute;
+    bottom:0;
+    margin-left:5%;
+}
+.p-0{
+    margin-top:10px;
+    width: 45px;
+}
+
+
+
+.middle{
+    width:95%;
+    height:100vh;
+    margin:0 auto;
+    border:1px solid red;
+    border-radius:12px;
+}
+.middle_heading{
+    width:100%;
+    background-color:#dfe6e9;
+    height:35px;
+    border-radius:12px;
+}
+
+.code_layout{
+    text-align: left;
+    margin-left:15px;
+    font-weight: 600;
+}
+.line{
+    display: block;
+}
+
+/* 
+@media only screen and (max-width: 999px) and (min-width: 600px)
+{
+code_layout{
+    line-height: 140%;
+    font-size: 1.2em;
+} */
+
+.right{
+    width:95%;
+    height:100vh;
+    margin:0 auto;
+    border:1px solid red;
+    border-radius:12px;
+}
+.right_heading{
+    width:100%;
+    background-color:#dfe6e9;
+    height:35px;
+    border-radius:12px;
+}
+
+.box-before-swap{
+    margin-top: 0px;
+    width: 100%;
+    height:30%;
+}
+
+
+.first-box{
+    border:1px solid #718093;
+    width:30%;
+    height: 60%;
+    box-sizing: content-box;
+    float:left;
+    margin:0 auto;
+    margin-left:60px;
+    background-color:#dcdde1;
+    border-radius:5px;
+}
+.yes_answer{
+    display: none;
+}
+
+.no_answer{
+    display: none;
+}
+
+.tempbox{
+    margin-left:120px;
+    height:80%;
+}
+
+.first-box p{
+ text-align: center;
+ margin-bottom: 0;
+
+}
+.first-value-box{
+    margin-top: 0;
+    width:45px;
+    height:35px;
+    background:#fff;
+    margin:0 auto;
+}
+.second-box{
+    border:1px solid #718093;
+    width:30%;
+    height: 60%;
+    box-sizing: content-box;
+    float: left;
+    margin-left:20px;
+    background-color:#dcdde1;
+    border-radius:5px;
+}
+.second-box p{
+    text-align: center;
+    margin-bottom: 0;
+}
+.second-value-box{
+    margin-top: 0;
+    width:45px;
+    height:35px;
+    background:#fff;
+    margin:0 auto;
+}
+
+.box-pointers{
+    margin-top:0px;
+    height:140px;
+}
+.box-pointers .first-value-box{
+    margin-bottom:5px;
+}
+.box-pointers .second-value-box{
+    margin-bottom:5px;
+}
+
+/* .Execute-code-box1{
+    float:left;
+    width:40%;
+    height:100%
+    align-items: initial;
+}
+
+.Execute-code-box2{
+    float:right;
+    width:40%;
+    height:100%;
+}
+.Execute-code-btn1:hover{
+    width:110px;
+    background-color:#3742fa;
+    outline: none;
+    box-sizing: border-box;
+}
+.Execute-code-btn2:hover{
+    width:110px;
+    background-color:#3742fa;
+    outline: none;
+    box-sizing: border-box;
+} */
+.box-after-swap{
+    margin-top:0px;
+}
+
+.swap-btn{
+    width:100%;
+    height: 20px;
+    float:left;
+    padding-top:20px;
+}
+
+.btn-success:hover{
+    width:90px;
+    background-color: springgreen;
+    outline: none;
+}

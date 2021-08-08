@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.navbar{
+    background-color: #fff;
+    padding: 10px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.title{
+    text-align: center;
+}
+
+.title > h2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+.calc-wrapper{
+    background-color: #fff;
+    padding: 10px;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.intro{
+    margin-top: 15px;
+}
+
+.intro > h3{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+.intro > p{
+    font-family: 'Lato', sans-serif;    
+    font-weight: 400;
+}
+
+.calc{
+    text-align: center;
+}
+
+.forms> input{
+    padding: 10px 25px;
+    border: 0;
+    border-bottom: 2px solid gray;
+    text-align: center;
+}
+
+#number{
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.forms{
+    display: grid;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#button{
+    width: 300px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: 1px solid green;
+    border-radius: 50px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+.result-heading{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.result > h1{
+    font-weight: 800;
+    text-align: center;
+    font-size: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        width: 95%;
+    }
+
+    .calc-wrapper {
+        width: 95%;
+    }
+}
+
+/* @media screen and (max-width: 800px) {
+    .intro-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'nav-wrapper'
+            'left-column'
+            'right-column';
+    } */

@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  max-height: 100%;
+}
+
+.navbar {
+  background-color: #e62e62;
+  color: #000;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.logos {
+  display: flex;
+}
+
+.college-logo > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.vertical-bar-in-logo {
+  width: 3.5px;
+  height: 100%;
+  background-color: navy;
+  margin: 0 1rem;
+}
+.vlab-logo {
+  width: 6rem;
+  height: 4rem;
+}
+
+.navbar-brand::first-letter {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.pulse-effect {
+  animation: blur 0.75s ease-out infinite;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 10px #fff,
+      0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff,
+      0px 0px 10px #fff, 0px 0px 7px #fff, 0px 0px 7px #fff, 0px 0px 7px #7b96b8,
+      0px 0px 17px #7b96b8, 0px 3px 13px #7b96b8, 0px 3px 13px #7b96b8,
+      0px 3px 13px #7b96b8, 0px 3px 13px #7b96b8, 0px -3px 13px #7b96b8,
+      0px -3px 13px #7b96b8;
+  }
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 900;
+  opacity: 1;
+  color: #fff !important;
+  position: relative;
+  padding: 0rem 1rem;
+}
+.active {
+  color: green;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+.view-simulator {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+}
+
+.view-simulator-link {
+  color: #fff;
+  padding-right: 1rem;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.view-simulator-link:hover {
+  color: #0a1c40;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .pulse-effect {
+    margin-top: 2rem !important;
+    font-size: 0.9rem;
+  }
+
+  .view-simulator {
+    margin: 0 auto;
+  }
+
+  .view-simulator-link {
+    text-align: center;
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 998px) {
+  .view-simulator {
+    margin: 0 auto;
+  }
+
+  .view-simulator-link {
+    text-align: center;
+    padding-right: 0rem;
+  }
+}
+
+/* css for view simulator pages */
+
+#viewSimulator {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  background: #b79891;
+  background: -webkit-linear-gradient(
+    to right,
+    #94716b,
+    #b79891
+  );
+  background: linear-gradient(
+    to right,
+    #94716b,
+    #b79891
+  );
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card:hover {
+  background: #1f4037;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.card-body > h5 {
+  color: #fff;
+}
+.card-body > p {
+   color:#fffa65;
+}
+
+.card-body > p:hover {
+  color: #fff;
+}
+
+.card-body > h5:hover {
+  color: #2f3640;
+}
+
+.card-img {
+  text-align: center;
+}
+.card-img > img {
+  width: 70%;
+  height: 70%;
+}
+
+.card_btn_section {
+  position: absolute;
+  bottom: 1rem;
+  left: 30%;
+}
+
+.contributor-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*--------------------------------------------- contributors page------------------------------ */
+
+#contributors_page {
+  background-color: #273c75;
+  background-image: linear-gradient(to right, #decba4, #3e5151);
+  width: 100%;
+  height: 100%;
+}
+
+.contributors_list {
+  margin: 0px;
+  padding: 0px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 45rem;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+}
+tr,
+td,
+th {
+  border: 1px solid hsl(47, 89%, 78%);
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #273c75;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  color: #273c75;
+}
+td:hover {
+  color: #020025;
+}
+
+th {
+  color: #2f3640;
+}
+
+th:hover {
+  color: #fff;
+}
+
+tr td:first-child {
+  color: #7f1514;
+}
+
+td > a {
+  color: #e62e62;
+  text-decoration: none;
+}
+
+td > a:hover {
+  color: #69d5c7;
+}
+
+@media (max-width: 992px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.4rem;
+  }
+  tr,
+  td,
+  th {
+    border: 0.5px solid #f9e495;
+    padding: 0.6rem;
+  }
+}
+
+/*------------------------------------- index page styling ---------------------------------------*/
+
+.main-header {
+  color: #3c40c6;
+  font-family: "Alfa Slab One", cursive;
+}
+
+#simulation_heading {
+  margin-top: 3rem;
+}
+
+.student_simulators_details {
+  color: #f53b57;
+  margin-top: 3rem;
+  font-family: "Alfa Slab One", cursive;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+#about_simulation {
+  color: #0a1c40;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.home-card {
+  width: 20rem;
+  height: 25rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background: #02aab0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #00cdac,
+    #02aab0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #00cdac,
+    #02aab0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home-card:hover {
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.home-card-title-heading {
+  color: #3c40c6;
+}
+
+.home-card-title-para {
+  color: #273c75;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 200;
+  color: #130f40;
+  line-height: 1.7rem;
+  font-size: 0.8rem;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 6px 7px;
+}
+
+.home-card-title-para:hover {
+  color: #fff;
+  text-shadow: rgba(160, 137, 137, 0.5) 0px 3px 3px;
+}
+
+.card-text-home {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+  right: 40%;
+}
+
+.testimonial-section {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 2rem;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+  margin:0px;
+  padding: 0px;
+}
+.testimonial-container div{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+.testimonial-img img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+}
+
+.testimonial-details {
+  font-family: "Acme", sans-serif;
+  padding: 0.5rem;
+  color: #020025;
+}
+
+.testimonial-person {
+  color: springgreen;
+}
+.testimonial-designation {
+  color: turquoise;
+}
+
+@media (max-width: 768px) {
+  #simu_category {
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+
+  .student_simulators_details {
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.7rem;
+  }
+  .testimonial-img{
+    margin: 0 auto;
+  }
+
+  .testimonial-img img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .testimonial-details {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 0.9;
+  }
+}
+/* ----------------------footer styles ------------------------------------ */
+.footer {
+  margin-top: 0px;
+  padding: 0px;
+  background-color: #e62e62;
+  padding-top: 1rem;
+}
+
+.footer-sections {
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+.iet-web-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.iet-web-link:hover {
+  color: #000;
+}
+
+.useful-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.useful-links a:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.rights-bottom {
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .useful-links a {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .rights-bottom {
+    text-align: left;
+    color: #fff;
+  }
+}

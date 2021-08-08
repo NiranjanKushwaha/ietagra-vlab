@@ -1,0 +1,140 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/factorial2_styles.css">
+    <script type="text/javascript" src="js/factorial2.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>index</title>
+  </head>
+  <body>
+    
+   <div class="container-fluid" >
+   	<div class="header">
+   		<div class="row">
+   			<div class="col-sm-3">
+   				<img  src="imgs/photo.jpg" height="100px;" width="100px;" id="image">
+   			</div>
+   			<div class="col-sm-9" id="headername"> Institute  Of  Engineering  And  Technology Agra<br> <p id="uniname">Dr Br Ambedkar University</p></div>
+   		</div>
+   	</div>
+   	<div class="  simuname " > Simulation For Factorial Program </div>
+
+   	<div class="row" style="margin-top: 5px; margin-left: 0px; margin-right: 0px;">
+
+   		<!------ This is the Program Section ----->
+
+   		<div class="col-sm-5" id="program" style="margin:0px; padding: 0px;">
+   			<div style="border-bottom: 2px solid blue; ">
+   				<h2 style="text-align: center; font-family: aparajita;margin-top: 1px;"><b>Program</b></h2>
+   			</div>
+   			<div>
+   				<p class="pro " id="p1"> <b>#include<<stdio.h>stdio.h></b></p>
+   				<p class="pro " id="p2"><b>void main()</b></p>
+   				<p class="pro " id="p3"><b>{</b></p>
+   				<p class="pro " id="p4"><b>int n, fact=1,i;</b></p>
+   				<p class="pro " id="p5"><b>printf("Enter a Number :");</b></p>
+   				<p class="pro " id="p6"><b>scanf("%d",&n);</b></p>
+   				<p class="pro " id="p7"><b>for(i=n ; i>=1 ; i--)</b></p>
+   				<p class="pro " id="p8"><b>{</b></p>
+   				<p class="pro " id="p9"><b>fact = fact*i;</b></p>
+   				<p class="pro " id="p10"><b>}</b></p>
+   				<p class="pro " id="p11"><b>printf("Factorial of %d = %d",n,fact);</b></p>
+   				<p class="pro " id="p12"><b>}</b></p>
+   			</div>
+   		</div>
+
+
+   		<!-------- This is the Output Section ------>
+
+   		<div class="col-sm-3" id="output" style=" padding: 0px;">
+   			<div style="border-bottom: 2px solid blue; margin-top: 5px;">
+   				<h2 style="text-align: center; font-family: aparajita;margin-top: 1px;"><b>Output</b></h2>
+   			</div>
+   			<div >
+   				<strong style="margin-top: 20px; margin-left: 2px;" class="dis_able" id="num">Enter A Number :</strong>
+   				<input type="Number" class = "dis_able" name="number" id="inp" style="margin-top: 20px; margin-left: 2px;" required="Required">
+   				<p class = "dis_able" style="margin-left: 20px; margin-top: 20px; font-size: 20px;"><b>n  : </b></p>
+   				<p class = "dis_able" style="margin-left: 20px;  font-size: 20px;"><b>i  : </b></p>
+   				<p class = "dis_able" style="font-size: 20px;" id="fact"><b> Factorial :
+				   <script>
+				function fact()
+  {
+   var number = document.getElementById('inp').values;
+    console.log(number);
+    var fact = 1;
+    var i;
+    if(i==0)
+    {
+        alert("Zero Not allowed Please Enter a valid number !");
+    }
+    else
+    {
+        for(i=number; i<=1;i--)
+        {
+            fact = fact * i;
+        }
+        document.write(fact);
+    }
+  }
+  fact();
+				   </script> </b></p>
+   			</div>
+   			<div class="row" style="margin-left: 20px; margin-top:370px;">
+   				<div class="col-sm-8" >
+   					<button class="btn btn-outline-primary" id="ld1" onclick="loadProgram();">Load Program</button>
+   				</div>
+   				<div class="col-sm-2"   >
+   					<button class="btn btn-outline-primary" onClick="nextStep();" id="next" disabled=true>Next</button>
+   				</div>
+   				
+   			</div>
+   			</div>
+   			
+   			
+   	
+
+
+   		<!------ This is the Program Explaination Section ------->
+
+
+   		<div class="col-sm-3" id="explain" style=" padding: 0px;" >
+   			<div style="border-bottom: 2px solid blue; margin-top: 5px;">
+   				<h2 style="text-align: center; font-family: aparajita;margin-top: 1px;"><b>Program Explaination</b></h2>
+   			</div>
+   			<div>
+   				<p id="e1" ></p>
+   				<p id="e2" ></p>
+   				<p id="e3" ></p>
+   				<p id="e4" ></p>
+   				<p id="e5" ></p>
+   				<p id="e6" ></p>
+   				<p id="e7" ></p>
+   				<p id="e8" ></p>
+   				<p id="e9" ></p>
+   				<p id="e10" ></p>
+   				<p id="e11" ></p>
+   				<p id="e12" ></p>
+   			</div>
+   		</div>
+   	</div>
+   </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

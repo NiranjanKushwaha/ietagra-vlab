@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>swap using reference</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-4.5.2-dist/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/swap_styles.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/swap_script.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 topSection text-center">
+          <p>swap two numbers by their reference</p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="row bottomSection">
+        <div class="col-sm-5 columns">
+          <div class="middle">
+            <div class="middle_heading">
+              <h3 class="text-center">Step Execution</h3>
+            </div>
+
+            <div class="code text-left">
+              <div class="line" id="line1">#include &ltstdio.h&gt</div>
+              <div class="line" id="line2">void swap(int*, int*);</div>
+              <div class="line" id="line3">int main()</div>
+              <div class="line" id="line4">{</div>
+              <div class="line" id="line5">int x, y;</div>
+              <div class="line" id="line6">
+                printf("Enter the first value\n");
+              </div>
+              <div class="line" id="line7">scanf("%d",&x);</div>
+              <div class="line" id="line8">
+                printf("Enter the second value\n");
+              </div>
+              <div class="line" id="line9">scanf("%d",&y);</div>
+              <div class="line" id="line10">
+                printf("Before Swapping\nx = %d", x);
+              </div>
+              <div class="line" id="line11">
+                printf("Before Swapping\ny = %d", y);
+              </div>
+              <div class="line" id="line12">swap(&x, &y);</div>
+              <div class="line" id="line20">
+                printf("\n After Swapping\nx = %d",x);
+              </div>
+              <div class="line" id="line21">
+                printf("\n After Swapping\ny = %d",y);
+              </div>
+              <div class="line" id="line22">return 0;</div>
+              <div class="line" id="line23">}</div>
+              <div class="line" id="line13">void swap(int *a, int *b)</div>
+              <div class="line" id="line14">{</div>
+              <div class="line" id="line15">int temp;</div>
+              <div class="line" id="line16">temp = *b;</div>
+              <div class="line" id="line17">*b = *a;</div>
+              <div class="line" id="line18">*a = temp;</div>
+              <div class="line" id="line19">}</div>
+            </div>
+
+            <div class="buttons text-center">
+              <!-- <button class="btn btn-success m-1 p-1" id="startbtn" onclick="start()">Start</button> -->
+              <button
+                class="btn btn-success m-1 p-1"
+                id="nextbtn"
+                onclick="showNext()"
+              >
+                Start
+              </button>
+              <button
+                class="btn btn-success m-1 p-1"
+                id="clearbtn"
+                onclick="clearPage()"
+                disabled="true"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 columns">
+          <div class="left">
+            <div class="left_heading">
+              <h3 class="text-center">Initialize</h3>
+            </div>
+            <div class="text-center">
+              <div class="input-section">
+                <input
+                  type="text"
+                  style="display: none"
+                  placeholder="Enter the first value"
+                  id="firstNum"
+                  onkeypress="return isNumberKey(event)"
+                />
+                <br /><br /><br />
+                <!-- <label style="display: none;color:red;" id="lbl1">Enter the first value</label> -->
+                <br /><br />
+                <input
+                  type="text"
+                  style="display: none"
+                  placeholder="Enter the second value"
+                  id="secondNum"
+                  onkeypress="return isNumberKey(event)"
+                />
+                <br />
+                <!-- <label style="display: none;color:red;" id="lbl2">Enter the second value</label> -->
+              </div>
+              <!-- Copied boxes for x and y -->
+
+              <div class="box-before-swap">
+                <h2 class="text-center" id="before-swap"></h2>
+                <div
+                  class="first-box value1-box inputsXY"
+                  style="display: none; color: #1b1464; font-weight: bold"
+                >
+                  <p id="onswap-a">x</p>
+                  <br />
+                  <div class="first-value-box">
+                    <p id="given_val1"></p>
+                  </div>
+                  <p>1000</p>
+                </div>
+                <div
+                  class="second-box value2-box inputsXY"
+                  style="display: none; color: #1b1464; font-weight: bold"
+                >
+                  <p id="onswap-b">y</p>
+                  <br />
+                  <div class="second-value-box">
+                    <p id="given_val2"></p>
+                  </div>
+                  <p>1008</p>
+                </div>
+              </div>
+              <!-- end copied -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 columns">
+          <div class="right">
+            <div class="right_heading">
+              <h3 class="text-center">Output</h3>
+            </div>
+            <!-- box for pointer variables  -->
+            <div class="pointer-var-boxes mt-3">
+              <div
+                class="first-pointer-box"
+                id="ptr-box1"
+                style="display: none; color: #1b1464; font-weight: bold"
+              >
+                <p id="pointer-a" class="text-center">a</p>
+                <br />
+                <div class="pointer-value-box1">
+                  <p id="ptr-val1">1000</p>
+                </div>
+              </div>
+
+              <div
+                class="second-pointer-box"
+                id="ptr-box2"
+                style="display: none; color: #1b1464; font-weight: bold"
+              >
+                <p id="pointer-b" class="text-center">b</p>
+                <br />
+                <div class="pointer-value-box2">
+                  <p id="ptr-val2">1008</p>
+                </div>
+              </div>
+            </div>
+            <!-- box for pointer variables ended here -->
+            <div class="box-pointers">
+              <h2 class="text-center" id="address-asign"></h2>
+              <div
+                class="first-box tempbox"
+                style="display: none; color: #1b1464; font-weight: bold"
+              >
+                <p><b>temp</b></p>
+                <br />
+                <div class="first-value-box">
+                  <p id="first-address" class="take-b"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-after-swap mt-5">
+              <h2 class="text-center" id="after-swap">After swapping</h2>
+
+              <div
+                class="first-box swap-box1 mt-5 ml-5 after-swap-x"
+                style="display: none; color: #1b1464; font-weight: bold"
+              >
+                <p>x</p>
+                <br />
+                <div class="first-value-box mb-4">
+                  <p id="swapped-data1"></p>
+                </div>
+              </div>
+              <div
+                class="second-box swap-box2 mt-5 ml-5 after-swap-y"
+                style="display: none; color: #1b1464; font-weight: bold"
+              >
+                <p>y</p>
+                <br />
+                <div class="second-value-box mb-4">
+                  <p id="swapped-data2"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+</html>

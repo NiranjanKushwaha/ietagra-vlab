@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/area_conversion_styles.css">
+		<link rel="icon" href="img\3ef140cb2dd1975cd81b33ccc79103e6-virtual-reality-icon-by-vexels.png">
+		<title>Area Conversion(hectare to sq foot)</title>
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 header">
+					
+					<div class="col-sm-10">
+						<p class="topicName" style="color: #f50606; text-align: center;">Area Conversion<p>
+					</div>
+				</div>
+			</div>
+			<div class="row main">
+				<div class="col-sm-3 init">
+					<div id="outer">
+						<div id="up">
+							<div id="l">
+								<i class="fa fa-signal" aria-hidden="true"
+									style="color:#f50606;font-size:25px;padding-top:10px;padding-left:20px;"></i>
+							</div>
+							<div id="r">
+								<p class="text-center" style="color:#f50606;font-size:25px;padding-top:7px;">Initialize</p>
+							</div>
+						</div>
+						<div id="dw" id="inputbox" style="margin-top:45px;
+		margin-bottom:40px;">
+							
+							<div id="make_visible1" style="display:none;">
+								<label class="text-center" id="lblinput" style="color:#f50606;padding-left:28px;">Enter a
+									Value in Hectare</label></br><br>
+								<input class="form-control" type="number" min="1" id="dis1"
+									style="margin-left:25px;width:80%;" />
+								<br>
+								<button class="form-control btn btn-danger mt-4" id="checkManuallybtn" onclick="Hectare()"
+									style="margin-left:25px;width:80%; font-weight:bold;">Check</button>
+							</div>
+							<div id="make_visible2" style="display:none;">
+								<label class="text-center" id="lblinput" style="color:#f50606;padding-left:28px;">Enter a
+									Value in Acre</label></br><br>
+								<input class="form-control" type="number" min="1" id="dis2"
+									style="margin-left:25px;width:80%;" />
+								<br>
+								<button class="form-control btn btn-danger mt-4" id="checkManuallybtn" onclick="Acre()"
+									style="margin-left:25px;width:80%; font-weight:bold;">Check</button>
+							</div>
+							<div id="make_visible3" style="display:none;">
+								<label class="text-center" id="lblinput" style="color:#f50606;padding-left:28px;">Enter a
+									Value in SquareKilometer</label></br><br>
+								<input class="form-control" type="number" min="1" id="spe2"
+									style="margin-left:25px;width:80%;" />
+								<br>
+								<button class="form-control btn btn-danger mt-4" id="checkManuallybtn" onclick="SquareKilometer()"
+									style="margin-left:25px;width:80%; font-weight:bold;">Check</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 step">
+					<div id="outer">
+						<div id="up">
+							<div id="l">
+								<i class="fa fa-file-text-o" aria-hidden="true"
+									style="color:#f50606;font-size:25px;padding-top:10px;padding-left:40px;"></i>
+							</div>
+							<div id="r">
+								<p class="text-center" style="color:#f50606;font-size:25px;padding-top:7px;">Step Execution
+								</p>
+							</div>
+						</div>
+						<div id="dw">
+							<section id="step1">
+								def conversion(unit1):
+							</section>
+							<section id="step2">
+								if(unit1 ==1):
+							</section>
+							<section id="step3">
+								hectare(num)	
+							</section>						
+							<section id="step4">
+								if(unit2 ==2):
+							</section>
+							<section id="step5">
+								acre(num)
+							</section>
+							<section id="step6">
+								if(unit3 ==3):
+							</section>
+							<section id="step7">
+								squarekilometer(num)
+							</section>
+	
+							<section id="step8">
+								measurement(unit1):
+							</section>
+	
+							<section id="step9">
+								def hectare(num):
+							</section>
+							<section id="step10">
+								sq_ft1 = num * 107639
+							</section>
+							<section id="step11">
+								return(sq_ft1)
+							</section>
+							<section id="step12">
+								def acre(num):
+							</section>
+							<section id="step13">
+								sq_ft2 = num * 43560
+							</section>
+							<section id="step14">
+								return(sq_ft2)
+							</section>
+							<section id="step15">
+								def squarekilometer(num):
+							</section>
+							<section id="step16">
+								sq_ft3 = num * 1.076e+7
+							</section>
+							<section id="step17">
+								return(sq_ft3)
+							</section>						
+							</section>
+							<div class="stepbtn">
+								<button type="button" onclick="start()" class=" btn btn-outline-danger btn-md step-buttons" id="startbtn"
+									style="background-color: green;">Start</button>
+								<button type="button" onclick="next()" class=" btn btn-outline-danger btn-md step-buttons btn-success" id="nextbtn"
+									style="background-color: yellow;" disabled=true>Next</button>
+								<button type="button" onclick="clearAll()" class=" btn btn-outline-danger btn-md step-buttons btn-success" id="clearbtn"
+									style="background-color: yellow;" disabled=true>Clear</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 output">
+					<div id="outer">
+						<div id="up">
+							<div id="l">
+								<i class="fa fa-desktop" aria-hidden="true"
+									style="color:#f50606;font-size:25px;padding-top:12px;padding-left:70px;"></i>
+							</div>
+							<div id="r">
+								<p class="text-center" style="color:#f50606;font-size:25px;padding-top:7px;">Code Output</p>
+							</div>
+						</div>
+						<div id="dw">
+							<div id="outer1"><br><br>
+								<label for="w" style="color:#e91e1e;padding-left:10px; font-size: large;">Your output:</label><br><br><br>
+	
+								<textarea class="form-control" id="output" name="w" rows="4" cols="50"
+									style="margin-left:25px;width:80%;resize: none;">
+	
+			</textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		<script src="js/area_conversion_script.js"></script>
+	</body>	
+</html>

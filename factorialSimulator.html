@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Of a Number</title>
+    <link rel="stylesheet" href="css/factorial_styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar code starts here -->
+    <div class="navbar">
+        <div class="title">
+            <h2>Factorial of a number</h2>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <!-- Navbar code ends here -->
+
+    <!-- main calculator wrapper -->
+    <div class="calc-wrapper">
+
+        <div class="intro">
+            <h3>What is Factorial ?</h3>
+            <br>
+            <p>In mathematical concept, the end product of given postive(+) integers(n) or number is called as factorial
+                of that number which is denoted by "n!". Factorial is also called as the end product of an integer and
+                all the integers falling under it. For example : The factorial of Number 3 (3!) is equals to 6 (3 x 2 x
+                1= 6). Factorial calculations are occured in many areas of maths just like in case of mathematical
+                analysis, algebra, combinatorics etc. Earlier in 12th century 'Indian Scholars' started using the trend
+                of factorial calculations for counting permutations. In 1808 one of the well-known french mathematician
+                Christian Kramp introduced the notation of 'n!' for factorial. The basic formula for defining the
+                factorial function is : n! = 1.2.3...(n-2).(n-1).n i.e for example 5! = 5 x 4 x 3 x 2 x 1 = 120.</p>
+        </div>
+
+        <div class="calc">
+            <h1>Enter Number to Find Factorial</h1>
+            <div class="forms">
+                <input type="text" id="number" name="digit">
+                <input class="calc" id="button" onclick="calculate()" type="button" value="Calculate">
+            </div>
+        </div>
+
+        <div class="result">
+            <div class="result-heading">
+                <h2>The Factorial of a given number is:</h2>
+            </div>
+            <br>
+            <h1 id="final-result">00</h1>
+        </div>
+
+    </div>
+</body>
+
+<script src="js/factorial_script.js"></script>
+
+</html>

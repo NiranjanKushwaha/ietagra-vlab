@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palindrome Simulator By Akanksha Pandey</title>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+        <link rel="stylesheet" href="css/palindrome_styles.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 topSection text-center">
+                    <p>C Program to Check Whether a Number is Palindrome or Not<p>
+                </div>
+            </div>
+
+            <div class="row bottomSection">
+                <div class="col-sm-5 columns">
+                    <div class="middle">
+                        <div class="middle_heading">
+                            <h3 class="text-center">Step Execution</h3>
+                        </div>
+
+                        <div class="code text-left">
+                            <div class="line" id="line1"> #include &ltstdio.h&gt</div>
+                            <div  class="line" id="line2">int main() </div>
+                            <div  class="line" id="line3">int n, reversedN = 0, remainder, originalN; </div>
+                            <div  class="line" id="line4">printf("Enter an integer: ");</div>
+                            <div  class="line" id="line5">scanf("%d", &n);</div>
+                            <div  class="line" id="line6">originalN = n;</div>
+                            <div  class="line" id="line7">while (n != 0) {</div>
+                            <div  class="line" id="line8">remainder = n % 10;</div>
+                            <div  class="line" id="line9">reversedN = reversedN * 10 + remainder;</div>
+                            <div  class="line" id="line10">n /= 10;</div>
+                            <div  class="line" id="line11">}</div>
+                            <div  class="line" id="line12">if (originalN == reversedN)</div>
+                            <div  class="line" id="line13">printf("%d is a palindrome.", originalN);</div>
+                            <div  class="line" id="line14">else</div>
+                            <div  class="line" id="line15">printf("%d is not a palindrome.", originalN);</div>
+                            <div  class="line" id="line16"> return 0;</div>
+                            <div  class="line " id="line17">}</div>
+                    </div>
+
+                    <div class="buttons text-center">
+                        <button class="btn btn-success m-1 p-1" id="startbtn" onclick="start()">Start</button>
+                        <button class="btn btn-success m-1 p-1" id="nextbtn" onclick="showNext()" disabled = true>Next</button>
+                        <button class="btn btn-success m-1 p-1" id="clearbtn" onclick="clearPage()" disabled = true>clear
+                        </button>
+                        
+                    </div>
+                        </div>
+                    </div>
+                
+
+                <div class="col-sm-3 columns">
+                    <div class="left">
+                        <div class="left_heading">
+                            <h3 class="text-center">Initialize</h3>
+                        </div>
+                        <div class="text-center">
+                            <input  type="text" style="display: none;" placeholder="Enter the first value" id="firstNum"  onkeypress="return isNumberKey(event)">
+                            <br>
+                            <label style="display: none;color:red;" id="lbl1">Enter the first value</label>
+                            <input  type="text" style="display: none;" placeholder="Enter the second value" id="secondNum"  onkeypress="return isNumberKey(event)"> <br>
+                            <label style="display: none;color:red;" id="lbl2">Enter the second value</label>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4 columns">
+                    <div class="right">
+                        <div class="right_heading">
+                            <h3 class="text-center">Output</h3>
+                        </div>
+                        <div class="box-before-swap mt-2">
+                            <h2 class="text-center" id="before-swap"></h2>
+                            <div class="first-box value1-box" style="display: none; color:#1B1464;font-weight:bold;">
+                                <p id="onswap-a">originalN</p><br>
+                                <div class="first-value-box">
+                                    <p id="given_val1"></p>
+                                </div>
+                                <p>1000</p>
+                            </div>
+                            <div class="second-box value2-box" style="display: none;color:#1B1464;font-weight:bold;">
+                                <p id="onswap-b">reversedN</p><br>
+                                <div class="second-value-box">
+                                    <p id="given_val2"></p>
+                                </div>
+                                <p>1004</p>
+                            </div>
+                        </div>
+
+                       <div class="yes_answer">
+                         <h3>Yes, The given number is Palindrome!</h3>
+                       </div>
+                       <div class="no_answer">
+                            <h3>No, The given number is not a Palindrome!</h3>
+                       </div>
+                    </div>
+                </div> 
+            </div>
+            </div>
+        </div>
+
+        
+    </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/palindrome_script.js"></script>
+</html>

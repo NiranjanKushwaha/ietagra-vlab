@@ -1,0 +1,109 @@
+.header {
+	height: 60px;
+	background-color: #d44909;
+	width: 100%;
+}
+
+/* .init{
+	float:left; 
+	padding-bottom:10px;
+	margin-bottom:-10px"
+}
+
+.step{
+	float:left; 
+	padding-bottom:10px;
+	margin-bottom:-10px"
+}
+*/
+.output {
+	margin-top: 0;
+}
+
+.topicName {
+	font-size: 35px;
+	font-weight: 500;
+	color: #fff;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 680px) {
+	.topicName {
+		font-size: 25px;
+	}
+}
+
+#outer {
+	min-height: 550px;
+	width: 100%;
+	border: 1px solid silver;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+#outer2 {
+	min-height: 600px;
+	width: 100%;
+	border: 1px solid silver;
+	border-radius: 10px;
+
+}
+
+#up {
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid silver;
+	background-color: whitesmoke;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#l {
+	height: 50px;
+	width: 20%;
+	float: left;
+}
+
+#r {
+	height: 50px;
+	width: 80%;
+	float: right;
+}
+
+#dw {
+	min-height: 500px;
+	width: 100%;
+	margin-left: 5%;
+	font-size: 1.3rem;
+	font-weight: 600;
+	line-height: 1.6;
+}
+
+.stepbtn {
+	margin-top: 20px;
+	padding: auto;
+	margin-left: 25%;
+}
+
+.step-buttons {
+	width: 60px;
+	outline: none;
+	border-radius: 5px;
+	color: navy;
+}
+
+.step-buttons:hover {
+	width: 80px;
+	background: #3742fa;
+}
+
+
+#outer1 {
+	height: 400px;
+	width: 80%;
+	border: 1px solid silver;
+	border-radius: 15px 15px 15px 15px;
+
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
