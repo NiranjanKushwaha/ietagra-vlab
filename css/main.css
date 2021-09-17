@@ -13,12 +13,13 @@ html {
 }
 
 .navbar {
-  background-color: #e62e62;
+  background-color: #fff;
   color: #000;
   text-align: center;
   margin: 0px;
   padding: 0px;
   width: 100%;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
 }
 .logos {
   display: flex;
@@ -30,7 +31,7 @@ html {
   border-radius: 50%;
 }
 .vertical-bar-in-logo {
-  width: 3.5px;
+  width: 1.5px;
   height: 100%;
   background-color: navy;
   margin: 0 1rem;
@@ -48,6 +49,9 @@ html {
 .pulse-effect {
   animation: blur 0.75s ease-out infinite;
 }
+.main-sub-header{
+  color:chartreuse;
+}
 
 @keyframes blur {
   from {
@@ -64,7 +68,7 @@ html {
   font-size: 1rem;
   font-weight: 900;
   opacity: 1;
-  color: #fff !important;
+  color: #000 !important;
   position: relative;
   padding: 0rem 1rem;
 }
@@ -73,7 +77,7 @@ html {
 }
 
 .nav-link:hover {
-  color: #000 !important;
+  color: tomato !important;
 }
 
 .view-simulator {
@@ -98,6 +102,10 @@ html {
   .pulse-effect {
     margin-top: 2rem !important;
     font-size: 0.9rem;
+  }
+  .main-sub-header{
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 
   .view-simulator {
@@ -156,7 +164,7 @@ html {
 }
 
 .card:hover {
-  background: #1f4037;  /* fallback for old browsers */
+  background: #1f4037;  
   background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
@@ -301,38 +309,17 @@ td > a:hover {
   height: 25rem;
   margin: 0 auto;
   margin-top: 2rem;
-  background: #02aab0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #00cdac,
-    #02aab0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #00cdac,
-    #02aab0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #F5F5F5; /* fallback for old browsers */
 }
 
 .home-card:hover {
-  background: #ff512f; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #dd2476,
-    #ff512f
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #dd2476,
-    #ff512f
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #EFEFEF; 
 }
 .home-card-title-heading {
   color: #3c40c6;
 }
 
 .home-card-title-para {
-  color: #273c75;
   font-family: "Alfa Slab One", cursive;
   font-weight: 200;
   color: #130f40;
@@ -342,7 +329,7 @@ td > a:hover {
 }
 
 .home-card-title-para:hover {
-  color: #fff;
+  color: #171717;
   text-shadow: rgba(160, 137, 137, 0.5) 0px 3px 3px;
 }
 
@@ -430,7 +417,7 @@ td > a:hover {
 .footer {
   margin-top: 0px;
   padding: 0px;
-  background-color: #e62e62;
+  background-color: #29292C;
   padding-top: 1rem;
 }
 
@@ -438,6 +425,7 @@ td > a:hover {
   color: #fff;
   display: flex;
   justify-content: space-evenly;
+  
 }
 .iet-web-link {
   color: #fff;
@@ -445,7 +433,7 @@ td > a:hover {
 }
 
 .iet-web-link:hover {
-  color: #000;
+  color: tomato;
 }
 
 .useful-links a {
@@ -457,7 +445,7 @@ td > a:hover {
 
 .useful-links a:hover {
   cursor: pointer;
-  color: #000;
+  color: tomato;
 }
 
 .rights-bottom {
